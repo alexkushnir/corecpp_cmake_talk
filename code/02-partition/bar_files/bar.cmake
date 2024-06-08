@@ -1,0 +1,1 @@
+set(BAR_SOURCES bar_files/bar.cpp)

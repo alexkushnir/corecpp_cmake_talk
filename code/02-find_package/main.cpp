@@ -5,10 +5,9 @@
 template<class MapType>
 void print_map(const MapType& m)
 {
-    typedef typename MapType::const_iterator const_iterator;
-    for(const_iterator iter = m.begin(), iend = m.end(); iter != iend; ++iter)
+    for (const auto& iter : m)
     {
-        std::cout << iter->first << "-->" << iter->second << std::endl;
+        std::cout << iter.first << "-->" << iter.second << std::endl;
     }
 }
 

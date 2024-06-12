@@ -1,6 +1,6 @@
 module;
 
-import <iostream>;
+#include <iostream>
 
 export module duck
 

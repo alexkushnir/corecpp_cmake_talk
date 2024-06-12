@@ -16,7 +16,6 @@ else()
     message(FATAL_ERROR "Version lower than 3.26 not supported")
 endif()
 
-set(CMAKE_CXX_SCAN_FOR_MODULES TRUE)
 add_library(duck)
 target_sources(duck PUBLIC FILE_SET CXX_MODULES FILES duck.ixx)
 target_compile_features(duck PUBLIC cxx_std_20)
@@ -24,6 +23,5 @@ set_target_properties(duck PROPERTIES CXX_SCAN_FOR_MODULES ON)
 set_target_properties(duck PROPERTIES CXX_EXTENSIONS OFF)
 
 add_executable(duck_call main.cpp)
-set_target_properties(duck_call PROPERTIES CXX_SCAN_FOR_MODULES ON)
 
 target_link_libraries(duck_call PRIVATE duck)

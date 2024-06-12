@@ -1,3 +1,0 @@
-NoArguments 2 0.00118202
-VariadicArguments 2 0.00122493
----

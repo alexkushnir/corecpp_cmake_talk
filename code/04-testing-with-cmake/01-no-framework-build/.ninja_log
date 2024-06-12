@@ -1,6 +1,0 @@
-# ninja log v6
-1	297	1718222434088173586	bin/CMakeFiles/no_framework.dir/main.cpp.o	dfb355ccd0644751
-1	324	1718222434088173586	test/CMakeFiles/unit_tests.dir/RemoteLogMessageTest.cpp.o	a26f73cc8b70ebc3
-298	370	1718222434388172694	bin/no_framework	a864663de9a16711
-1	369	1718222509278147427	test/CMakeFiles/unit_tests.dir/RemoteLogMessageTest.cpp.o	a26f73cc8b70ebc3
-369	453	1718222509648147648	test/unit_tests	2a761bc9519b72eb

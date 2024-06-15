@@ -2,15 +2,16 @@
 #include <fstream>
 #include <iostream>
 
-
 int main()
 {
-    std::ifstream f("example.json");
-    nlohmann::json data = nlohmann::json::parse(f);
+    nlohmann::json data = nlohmann::json::parse(
+        std::ifstream{"./example.json"});
 
-    for (const auto& field : data)
+    for (const auto& field : data.items())
     {
-        std::cout << field << std::endl;
+        std::cout << field.key() << ": " 
+            << field.value() << std::endl;
     }
+
     return 0;
 }

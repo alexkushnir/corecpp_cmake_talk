@@ -1,1 +1,0 @@
-add_executable(no_framework main.cpp)

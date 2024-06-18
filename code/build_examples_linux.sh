@@ -12,7 +12,6 @@ directories=($(find $BASE_DIR -maxdepth 1 -mindepth 1 -type d | grep -v "modules
 # Iterate over the array and print each directory name
 for dir in "${directories[@]}"; 
 do
-    # echo $dir
     echo "Configuring the $dir example"
     cmake -GNinja -S $dir -B $dir-build
     echo "Building the $dir example"

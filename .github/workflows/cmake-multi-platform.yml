@@ -57,7 +57,7 @@ jobs:
     - name: Install dependencies (Linux only)
       # Install boost
       run: | 
-        if [ "$RUNNER_OS" == "Linux" ]; then
+        if matrix.os == 'ubuntu-latest'
           sudo apt-get install -y libboost-dev
         fi
     - name: Configure CMake
